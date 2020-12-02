@@ -26,7 +26,7 @@ class Event extends Component {
       <p className="start-time">{event.start.dateTime}</p>
       <p className="location">{event.location}</p>
       <button className="hide-details" onClick={() => this.hideDetails()}>
-      Hide Details
+      Show Details
       </button>
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import EventList from './EventList';
 import CitySearch from './CitySearch';
@@ -13,7 +13,7 @@ class App extends Component {
     events: [],
     locations: [],
     numberofevents: 32,
-    currentLocation: 'all'
+    currentLocation: 'all',
   }
 
   updateEvents = (location, eventCount) => {
@@ -62,9 +62,10 @@ class App extends Component {
       <div className="App">
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
         <EventList events={this.state.events} />
-        <NumberOfEvents numberofevents={this.state.numberofevents} updateEvents={this.updateEvents} />
+        <NumberOfEvents numberofevents={this.state.numberofevents} updateEvents={this.updateEvents} />  
       </div>
-  );
+    );
   }
 }
+
 export default App;

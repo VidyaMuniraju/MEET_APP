@@ -83,8 +83,8 @@ export const getAccessToken = async () => {
 
     if(!code) {
       const results =await axios.get('https://fpwjcn9lu7.execute-api.us-east-1.amazonaws.com/dev/api/get-auth-url');
-      const { authURL } = results.data;
-      return (window.location.href = authURL);
+      const { authUrl } = results.data;
+      return (window.location.href = authUrl);
     }
 
     return code && getToken(code);
