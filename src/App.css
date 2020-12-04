@@ -221,3 +221,7 @@ input[type="number"] {
     margin: 0 auto;
   }
 }
+
+.hide-details {
+  margin-top: 20px;
+}

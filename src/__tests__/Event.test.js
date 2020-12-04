@@ -61,9 +61,9 @@ describe('<Event /> component', () => {
     expect(EventWrapper.find('.summary').text()).toBe('React is Fun');
   });
 
-  test('render description of the event', () => {
-    expect(EventWrapper.find('.description')).toHaveLength(1);
-  });
+  // test('render description of the event', () => {
+  //   expect(EventWrapper.find('.description')).toHaveLength(1);
+  // });
 
   test('render start time of the event', () => {
     expect(EventWrapper.find('.start-time').text()).toBe('2020-05-20T14:00:00+02:00');
@@ -81,6 +81,7 @@ describe('<Event /> component', () => {
     expect(EventWrapper.state('toggleDetails')).toBe(false);
     EventWrapper.find('.hide-details').simulate('click');
     expect(EventWrapper.state('toggleDetails')).toBe(true);
+    expect(EventWrapper.find('.description')).toHaveLength(1);
   });
 
   test('the show details button is displayed and collapses on click', () => {
