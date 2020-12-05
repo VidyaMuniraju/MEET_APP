@@ -40,6 +40,7 @@ input[type="number"] {
 
 .city {
   width: 250px;
+  margin-top: 35px;
 }
 
 .CitySearch {
@@ -53,11 +54,11 @@ input[type="number"] {
 
 .suggestions {
   width: 250px;
-  position: absolute;
+  position: relative;
   z-index: 2;
   align-self: center;
   margin: 0;
-  top: 43px;
+  /* top: 43px; */
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
@@ -80,6 +81,7 @@ input[type="number"] {
 
 .event {
   padding: 10px 10px 35px;
+  margin-top: 35px;
   margin-bottom: 10px;
   text-align: left;
   border: 1px solid #ccc;
@@ -131,8 +133,9 @@ input[type="number"] {
 }
 
 .Alert {
-  position: fixed;
+  position: relative;
   top: 20px;
+  text-align: center;
 }
 
 .data-vis-wrapper {
@@ -224,4 +227,19 @@ input[type="number"] {
 
 .hide-details {
   margin-top: 20px;
+}
+
+/* .info-text {
+  margin-bottom: 15px;
+} */
+
+/* .error-text {
+  text-align: center;
+  margin: 15px 0px 15px 20px;
+} */
+
+.alert-text {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
