@@ -32,7 +32,7 @@ class App extends Component {
     }
     else {
       getEvents().then((events) => {
-        const locationEvents = (location === 'all') ?
+        const locationEvents = (currentLocation === 'all') ?
         events :
         events.filter((event) => event.location === currentLocation);
         const filteredEvents = locationEvents.slice(0, eventCount);
@@ -61,8 +61,9 @@ class App extends Component {
     return (
       <div className="App">
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
-        <EventList events={this.state.events} />
         <NumberOfEvents numberofevents={this.state.numberofevents} updateEvents={this.updateEvents} />
+        <EventList events={this.state.events} />
+        
       </div>
     );
   }
