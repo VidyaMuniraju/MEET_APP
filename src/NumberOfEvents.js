@@ -16,7 +16,7 @@ class NumberOfEvents extends Component {
     });
     } else {
       return this.setState({
-        numberofevents: event.target.value,
+        numberofevents: null,
         errorText: 'Please select a number from 1 to 32'
       });
     }
