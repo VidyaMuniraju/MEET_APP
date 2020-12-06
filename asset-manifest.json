@@ -10,6 +10,8 @@
     "static/js/3.827c2c4f.chunk.js": "/MEET_APP/static/js/3.827c2c4f.chunk.js",
     "static/js/3.827c2c4f.chunk.js.map": "/MEET_APP/static/js/3.827c2c4f.chunk.js.map",
     "index.html": "/MEET_APP/index.html",
+    "service-worker.js": "/MEET_APP/service-worker.js",
+    "service-worker.js.map": "/MEET_APP/service-worker.js.map",
     "static/css/main.4b4a2efc.chunk.css.map": "/MEET_APP/static/css/main.4b4a2efc.chunk.css.map",
     "static/js/2.2b0a3888.chunk.js.LICENSE.txt": "/MEET_APP/static/js/2.2b0a3888.chunk.js.LICENSE.txt"
   },
