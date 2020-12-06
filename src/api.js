@@ -20,15 +20,15 @@ const checkToken = async (accessToken) => {
 const removeQuery = () => {
   if(window.history.pushState && window.location.pathname) {
     var newurl = window.location.protocol + 
-                 '/' +
+                 '//' +
                  window.location.host + 
                  window.location.pathname;
     window.history.pushState("", "", newurl);
   }
   else {
-    newurl = window.location.protocol + '/' + window.location.host;
+    newurl = window.location.protocol + '//' + window.location.host;
     window.history.pushState("", "", newurl);
-  }
+   }
 };
 
 const getToken = async (code) => {
@@ -84,6 +84,7 @@ export const getAccessToken = async () => {
     if(!code) {
       const results =await axios.get('https://fpwjcn9lu7.execute-api.us-east-1.amazonaws.com/dev/api/get-auth-url');
       const { authUrl } = results.data;
+      console.log(authUrl);
       return (window.location.href = authUrl);
     }
 
